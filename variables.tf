@@ -35,6 +35,6 @@ variable "ecs-cluster-name" {
 variable "task-def-name" {
   default = "ecs-task"
 }
-variable "server-name" {
+variable "service-name" {
   default = "ecs-service"
 }

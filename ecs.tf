@@ -27,7 +27,7 @@ resource "time_sleep" "wait_120_seconds" {
 
 resource "aws_ecs_service" "test" {
   depends_on      = [time_sleep.wait_120_seconds]
-  name            = var.server-name
+  name            = var.service-name
   cluster         = "${aws_ecs_cluster.prod-ecs-cluster.id}"
   task_definition = "${aws_ecs_task_definition.service.arn}"
   desired_count   = 2
