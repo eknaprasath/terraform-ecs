@@ -1,0 +1,9 @@
+iampolicy = "arn:aws:iam::aws:policy/AdministratorAccess"
+vpc-id = "vpc-014a320b93a8dd655"
+security-groups = ["sg-044a92fdb5844a4c5"]
+subnets = ["subnet-0902e48ec6f971922", "subnet-0c3672bbc0d178dff"]
+amiid = "ami-00129b193dc81bc31"
+instancetype = "t2.medium"
+ecs-cluster-name = "prod-ecs-cluster"
+task-def-name = "ecs-task"
+server-name = "ecs-service"

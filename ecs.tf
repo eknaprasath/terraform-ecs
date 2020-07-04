@@ -16,7 +16,7 @@ resource "aws_ecs_task_definition" "service" {
     type       = "memberOf"
     expression = "attribute:ecs.availability-zone in [us-east-1a, us-east-1b]"
   }
-  #   requires_compatibilities = "FARGATE"
+  #   requires_compatibilities = ["FARGATE"]
 }
 
 resource "time_sleep" "wait_120_seconds" {
