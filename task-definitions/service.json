@@ -11,18 +11,5 @@
           "hostPort": 80
         }
       ]
-    },
-    // {
-    //   "name": "second",
-    //   "image": "eknaprasath/tomcat-sample:latest",
-    //   "cpu": 512,
-    //   "memory": 512,
-    //   "essential": true,
-    //   "portMappings": [
-    //     {
-    //       "containerPort": 8080,
-    //       "hostPort": 8080
-    //     }
-    //   ]
-    // }
+    }
   ]
