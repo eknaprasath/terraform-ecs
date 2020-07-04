@@ -1,4 +1,4 @@
-    
+
 
 resource "aws_iam_role" "role" {
   name = "test-role"
@@ -20,9 +20,9 @@ resource "aws_iam_role" "role" {
 EOF
 }
 
-  resource "aws_iam_policy_attachment" "test-attach" {
-  name       = "test-attachment"
-  roles      = ["${aws_iam_role.role.name}"]
+resource "aws_iam_policy_attachment" "test-attach" {
+  name  = "test-attachment"
+  roles = ["${aws_iam_role.role.name}"]
   # policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
   policy_arn = var.iampolicy
 }
